@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="update_synch=true" db_object_id="c66173c4832b0210648f9be0deaad3db" extends="dl_matcher" label="Hotel Type Lookup Rule" max_length="40" name="x_58872_needit_hotel_type_lookup_rule" type="collection">
+        <element attributes="encode_utf8=false" label="Emp department" max_length="32" name="emp_department" reference="cmn_department" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" choice_field="title" choice_table="sys_user" label="Emp designation" max_length="40" name="emp_designation" type="choice">
+            <choice/>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" choice_field="x_58872_needit_hotel_type" choice_table="incident" label="Hotel Type" max_length="40" name="hotel_type" type="choice">
+            <choice/>
+        </element>
+        <index name="index">
+            <element name="emp_department"/>
+        </index>
+    </element>
+</database>

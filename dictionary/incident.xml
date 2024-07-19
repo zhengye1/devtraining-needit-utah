@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="email_client=true,hasWorkflow=true,live_feed=true,all_tables.query_hints=true" audit="true" db_object_id="a345e80a1882021076dae3f117ba1e3a" extends="task" label="Incident" max_length="40" name="incident" text_index="true" type="collection">
+        <element attributes="encode_utf8=false" label="Emp department" max_length="32" name="x_58872_needit_emp_department" reference="cmn_department" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" choice_field="title" choice_table="sys_user" label="Emp designation" max_length="40" name="x_58872_needit_emp_designation" type="choice">
+            <choice/>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Hotel Type" max_length="40" name="x_58872_needit_hotel_type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="7-Star" sequence="0" value="7-Star"/>
+                <element inactive_on_update="false" label="5-Star" sequence="1" value="5-Star"/>
+                <element inactive_on_update="false" label="4-Star" sequence="2" value="4-Star"/>
+                <element inactive_on_update="false" label="3-Star" sequence="3" value="3-Star"/>
+                <element inactive_on_update="false" label="1-Single Room" sequence="4" value="1-Single Room"/>
+            </choice>
+        </element>
+    </element>
+</database>
